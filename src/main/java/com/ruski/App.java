@@ -21,7 +21,13 @@ public class App extends ListenerAdapter {
         String content = message.getContentRaw();
 
         if (content.equalsIgnoreCase("!hello")) {
-            event.getChannel().sendMessage("Hello, World!").queue();
+            event.getChannel().sendMessage("Hello there.").queue();
+        }
+        if (content.equalsIgnoreCase("!website")) {
+            event.getChannel().sendMessage("We are working on it.").queue();
+        }
+        if (content.equalsIgnoreCase("!youtube")) {
+            event.getChannel().sendMessage("We are working on it.").queue();
         }
     }
 }
