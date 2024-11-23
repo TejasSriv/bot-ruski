@@ -1,6 +1,5 @@
 package com.ruski;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
@@ -12,7 +11,7 @@ public class App extends ListenerAdapter {
         String token = System.getenv("BOT_TOKEN");
         JDABuilder.createDefault(token)
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
-                .addEventListeners(new App())
+                .addEventListeners(new App(), new KickCommand())
                 .build();
     }
 
