@@ -1,0 +1,9 @@
+# Ignore environment variables file
+.env
+
+# Ignore build directories
+target/
+
+# Ignore Maven files
+*.log
+.mvn/
