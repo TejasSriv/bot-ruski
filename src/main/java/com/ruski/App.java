@@ -29,5 +29,8 @@ public class App extends ListenerAdapter {
         if (content.equalsIgnoreCase("!youtube")) {
             event.getChannel().sendMessage("We are working on it.").queue();
         }
+        if (content.equalsIgnoreCase("!help")) {
+            event.getChannel().sendMessage("!help, !hello, !website, !youtube").queue();
+        }
     }
 }
